@@ -9,44 +9,34 @@
     <link href="css/tooplate-style.css" rel="stylesheet">
 
     <style>
-        #haha {
-            border: 1px solid black;
+        .menu {
+            border: 10px solid green;
             padding: 20px;
-            margin-top: 20px;
-        }
-
-        #haha a {
-            margin-right: 20px;
-        }
-
-        .mt-20 {
-            margin-top: 20px;
+            margin-bottom: 20px;
         }
     </style>
-
 
 </head>
 <body>
 	<div class="tm-container-fluid">
         <!-- code here -->
-        <section class="menu" id="haha">
+        <section class="menu tm-bgcolor-1" id="">
             <a href="#">Home</a>
             <a href="#">About</a>
+            <a href="#">Contact</a>
         </section>
 
         <section class="tm-bgcolor-2 tm-p-50 mt-20" style="border-radius: 15px; margin-bottom: 20px;">
             <h1>
                 <?php
                     $pageTitle = 'Adi Sanggoro Keren';
-                    echo $pageTitle.' - Banget';
+                    echo "$pageTitle - Banget";
                 ?>
             </h1>
             <?php
                 $x = 1;
-                while($x <=5) {
-            ?>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nisi amet corporis recusandae repudiandae eos, eligendi ducimus tenetur suscipit enim beatae aliquam officia veniam ex hic distinctio accusantium, voluptatem dicta?</p>
-            <?php
+                while($x <=5) { 
+                    echo "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nisi amet corporis recusandae repudiandae eos, eligendi ducimus tenetur suscipit enim beatae aliquam officia veniam ex hic distinctio accusantium, voluptatem dicta?</p>";
                     $x++;
                 }
             ?>
